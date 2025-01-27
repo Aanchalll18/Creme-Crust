@@ -16,6 +16,7 @@
     max-width: 50%;
     bottom: 105;
     right: 3vw;
+    animation: fadeIn 3s;
 }
 .header-contents h2{
     font-weight: 500;
@@ -37,3 +38,4 @@
     font-size: max(1vw,13px);
     border-radius: 50px;
 }
+
