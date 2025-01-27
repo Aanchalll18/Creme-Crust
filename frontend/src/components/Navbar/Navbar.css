@@ -9,6 +9,10 @@
     cursor: pointer;
 }
 
+.navbar li:hover{
+    color: #8b4513;
+}
+
 .navbar .logo{
     width: 150px;
 }
@@ -48,7 +52,8 @@
 
 .navbar .active{
     padding-bottom: 2px;
-    border-bottom: 2px solid rgb(58, 27, 5);
+    border-bottom: 2px solid rgb(168, 109, 68);
+    color: #8b4513;
 }
 
 .navbar-search-icon .dot{
