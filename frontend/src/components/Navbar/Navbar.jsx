@@ -18,8 +18,10 @@ const Navbar = () => {
       <div className="navbar-right">
         <img src={assets.search_icon} alt=""  />
         <div className="navbar-search-icon">
-          <img  className = "basket-icon" src={assets.basket_icon} alt="" />
-          <div className='dot'></div>
+
+         <img  className = "basket-icon" src={assets.basket_icon} alt="" />
+         <div className='dot'></div>
+         
         </div>
         <button>
           Sign in
