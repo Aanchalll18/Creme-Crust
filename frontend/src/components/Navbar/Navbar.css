@@ -1,8 +1,12 @@
-.navbar{
+ .navbar{
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navbar li{
+    cursor: pointer;
 }
 
 .navbar .logo{
@@ -13,7 +17,7 @@
     display: flex;
     list-style: none;
     gap: 20px;
-    color: #8b4513;
+    color: rgb(58, 27, 5);
     font-size: 18px;
 }
 
@@ -23,7 +27,7 @@
     gap: 40px;
 }
 .basket-icon{
-    width: 32px; /* Set the desired width */
+    width: 32px; 
     height: 32px;
 }
 .navbar button{
@@ -41,3 +45,18 @@
     background-color:#4B3621 ;
     color: white;
 }
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(58, 27, 5);
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: red;
+    border-radius: 5px;
+    right: 315px;
+ }
+ 
