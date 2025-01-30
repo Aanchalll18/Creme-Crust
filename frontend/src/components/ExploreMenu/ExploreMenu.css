@@ -33,6 +33,12 @@
 .explore-menu-list-item p{
     margin-top: 10px;
     color: #747474;
-    font-size: max(1.4vw,16px);
+    font-size: max(1.0vw,10px);
     cursor: pointer;
+}
+.explore-menu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #fff;
+    border: none;
 }
