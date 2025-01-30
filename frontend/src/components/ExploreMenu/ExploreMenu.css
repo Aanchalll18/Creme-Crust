@@ -30,3 +30,9 @@
     border-radius: 50%;
     transition: 0.2s;
 }
+.explore-menu-list-item p{
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+}
