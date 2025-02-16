@@ -11,8 +11,10 @@ const [category,setcategory]=useState('All')
   return (
     <div>
       <Header/>
+
       <ExploreMenu category={category} setcategory={setcategory}/>
-      <FoodDisplay/>
+
+      <FoodDisplay category={category}/>
     </div>
   )
 }
