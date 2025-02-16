@@ -9,59 +9,114 @@
     padding: 20px 8vw;
     padding-top: 80px;
     margin-top: 100px;
-    
-
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5); /
 }
 
+/* Grid Layout for Large Screens */
 .footer-content {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    gap: 80px;
+    gap: 60px; 
 }
 
+/* Image Adjustments */
 .img {
-    height: 100px;
-    transform: translateY(-50px); 
-    margin-left: 10px;   
+    height: 90px; 
+    transform: translateY(-30px);
+    margin-left: 10px;
 }
 
-.footer-content-left ,.footer-content-right, .footer-content-center{
+/* Common Styles for Sections */
+.footer-content-left,
+.footer-content-right,
+.footer-content-center {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 20px;
+    gap: 15px; 
 }
-.para{
+
+/* Paragraph and Social Icons */
+.para {
     margin-bottom: 8px;
-    transform: translateY(-40px);
+    transform: translateY(-20px);
     margin-left: 20px;
 }
-.footer-content-left li,.footer-content-right li,.footer-content-center li{
-    list-style: none;
-    margin-bottom: 10px;
+
+.footer-social-icons {
+    transform: translateY(-20px);
+    margin-left: 15px;
 }
-.footer-content-right h2,.footer-content-center h2{
+
+/* List Styling */
+.footer-content-left li,
+.footer-content-right li,
+.footer-content-center li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.footer-content-right h2,
+.footer-content-center h2 {
     color: beige;
 }
-.footer-social-icons{
-    transform: translateY(-40px);
-    margin-left: 20px;
+
+
+.fa {
+    margin: 0 8px;
+    font-size: 1.2rem; 
 }
-.fa{
+
+.tw {
     margin-left: 10px;
-    margin-right: 10px;
 }
-.tw{
-    margin-left: 10px;
-}
-.footer hr{
+
+/* Footer Divider */
+.footer hr {
     width: 100%;
     height: 2px;
+    background-color: bisque; 
 }
-.content-content-center {
-    display: flex;
-    flex-direction: column; 
-    align-items: start;  
-    gap: 10px; 
+
+@media screen and (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr; 
+        gap: 40px;
+    }
+
+    .footer-content-left,
+    .footer-content-right,
+    .footer-content-center {
+        align-items: center; 
+        text-align: center;
+    }
+
+    .img {
+        height: 80px; 
+        transform: translateY(-20px);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-content-left,
+    .footer-content-right,
+    .footer-content-center {
+        align-items: center;
+    }
+
+    .img {
+        height: 70px;
+        transform: translateY(0);
+    }
+
+    .footer-social-icons {
+        margin: auto;
+    }
 }
