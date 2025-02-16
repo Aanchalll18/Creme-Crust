@@ -3,7 +3,7 @@ import "./FoodDisplay.css";
 import { StoreContext } from "../../context/StoreCntext";
 import FoodItem from "../foodItem/FoodItem";
 
-const FoodDisplay = ({ category }) => {
+const FoodDisplay = ({ category = "All" }) => {
 	const { food_list } = useContext(StoreContext);
     console.log(food_list)
 	return (
@@ -13,7 +13,7 @@ const FoodDisplay = ({ category }) => {
 				{food_list 
 					.map((item, index) => {
                         {console.log(category,item.category);}
-						if(category === 'All' || category=== item.category){
+						if(category === 'All' || category === item.category){
                             return <FoodItem
 							key={index}
 							id={item._id}
