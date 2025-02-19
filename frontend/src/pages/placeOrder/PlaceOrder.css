@@ -22,3 +22,17 @@
     border-radius: 4px;
     outline-color: darkred;
 }
+/* .place-order-left .multi-feilds{
+    display: flex;
+    gap: 20px;
+} */
+ .place-order-right{
+    width: 100%;
+    max-width: max(40%,50px);
+    /* align-items: center; */
+    
+ }
+ .place-order .cart-total button{
+    margin-top: 10px;
+    /* width: 200px; */
+ }
