@@ -5,10 +5,10 @@
     padding: 8px 4%;
 }
 
-.navbar .logon{
+.navbar .logo{
     width: max(10%,80px);
 }
 
-.navbar ,profile{
+.navbar .profile{
     width: 40px;
 }
