@@ -1,33 +1,3 @@
-// import express from 'express'
-// import foodModel from "../Models/foodModel.js";
-// import fs from 'fs'
-
-// const addFood =async(req,res) =>{
-
-//     let image_filename=`${req.file}`;
-
-//     const food=new foodModel({
-//         name:req.body.name,
-//         description:req.body.description,
-//         price:req.body.price,
-//         category:req.body.category,
-//         image:image_filename
-//     })
-
-//     try {
-//         await food.save();
-//         res.json({success:true,message:"Food Added"})
-
-//     } catch (error) {
-//        console.log(error)
-//        res.json({
-//         success:false,
-//         message:error.message
-//        })
-//     }
-// }
-// export {addFood}
-
 import foodModel from "../Models/foodModel.js";
 
 const addFood = async (req, res) => {
@@ -65,4 +35,28 @@ const addFood = async (req, res) => {
 	}
 };
 
-export { addFood };
+const listFood=async(req,res)=>{
+    try {
+        
+    } catch (error) {
+        console.log(error);
+        res.json({
+            success:false,
+            message:error.message
+        })
+    }
+}
+
+const delteFood=async(req,res)=>{
+    try {
+        
+    } catch (error) {
+        console.log(error)
+        res.json({
+            success:false,
+            message:error.message
+        })
+    }
+}
+
+export { addFood,delteFood,listFood };
