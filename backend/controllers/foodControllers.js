@@ -1,4 +1,5 @@
 import foodModel from "../Models/foodModel.js";
+import fs from 'fs'
 
 const addFood = async (req, res) => {
 	try {
@@ -54,7 +55,8 @@ const listFood=async(req,res)=>{
 
 const delteFood=async(req,res)=>{
     try {
-        
+        const food=await foodModel.findById(req.body.id);
+        fs.un
     } catch (error) {
         console.log(error)
         res.json({
