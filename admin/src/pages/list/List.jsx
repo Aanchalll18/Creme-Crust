@@ -6,7 +6,7 @@ import './list.css'
 const List = () => {
   return (
     <div>
-      
+      s
     </div>
   )
 }
