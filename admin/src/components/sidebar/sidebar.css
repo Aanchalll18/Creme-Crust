@@ -31,7 +31,7 @@
 .sidebar {
     width: 18%;
     min-height: 100vh;
-    border: 1.5px solid #a9a9a9;
+    border: 1.5px solid blanchedalmond;
     border-top: 0;
     font-size: clamp(10px, 1vw, 14px);
 }
@@ -51,6 +51,11 @@
     border: 1px solid #a9a9a9;
     padding: 8px 3px;
     cursor: pointer;
+}
+
+.sidebar-option.active{
+    background-color: beige;
+    border-color: bisque;
 }
 
 @media (max-width: 900px) {
